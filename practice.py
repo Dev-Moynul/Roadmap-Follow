@@ -45,3 +45,16 @@ for _ in range(int(input())):
         if x % 2 == 0:
             cnt += 1
     print(cnt)
+
+# Average > check 
+import sys
+input = sys.stdin.buffer.readline
+for _ in range(int(input())):
+    n = int(input())
+    a = list(map(int,input().split()))
+    cnt = 0
+    for x in a:
+        avg = sum(a)/n 
+        if avg < x :
+            cnt += 1
+    print(cnt)
