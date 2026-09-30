@@ -58,4 +58,16 @@ for _ in range(int(input())):
         if avg < x :
             cnt += 1
     print(cnt)
-    
+
+# Sliding Window
+arr = [2,3,4,5,6,9]
+t = 345
+for i in range(len(arr)):
+    for j in range(1, len(arr)):
+        if arr[i] + arr[j] == t:
+            print("found")
+            break;  
+else:
+    print("Not found")
+
+
