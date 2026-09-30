@@ -46,7 +46,7 @@ for _ in range(int(input())):
             cnt += 1
     print(cnt)
 
-# Average > check 
+# Average < list eliment 
 import sys
 input = sys.stdin.buffer.readline
 for _ in range(int(input())):
@@ -58,3 +58,4 @@ for _ in range(int(input())):
         if avg < x :
             cnt += 1
     print(cnt)
+    
