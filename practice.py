@@ -70,4 +70,23 @@ for i in range(len(arr)):
 else:
     print("Not found")
 
+#Two pointers
+def two_sum(arr, t):
+    l, r = 0, len(arr)-1
+
+    while l < r :
+        if arr[l] + arr[r] == t:
+            return True
+        elif arr[l] + arr[r] > t:
+            r -= 1
+        else:
+            l += 1
+    return False
+arr = [2,3,4,5,6,7]
+t = 56
+if two_sum(arr, t):
+    print(True)
+else:
+    print(False)
+
 
